@@ -1,0 +1,15 @@
+
+  490  git clone https://github.com/as4235/IS601.git
+  491  cd desktop
+  492  git clone https://github.com/as4235/IS601.git
+  493  cd IS601
+  494  nano dockerfile
+  495  docker image build -t docker:1.0 .
+  496  nano dockerfile
+  497  docker image build -t docker:1.0 .
+  498  docker container run --publish 8000:8080 --detach --name bb docker:1.0
+  499  docker container run --publish 8000:8080 --detach --name bb docker:1.0
+  500  docker container rm --force bb
+  501  docker image tag docker:1.0 as4235/docker:1.0
+  502  docker image push as4235/docker:1.0
+  503  history > history.txt
